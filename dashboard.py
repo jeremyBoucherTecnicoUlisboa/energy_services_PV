@@ -21,6 +21,7 @@ eventHandlers = dict(
 
 app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 app.title = 'PV Gen'
+server = app.server
 
 app.layout = html.Div([
     dl.Map([
